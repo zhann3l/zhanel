@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Gold - AI & Robotics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #050505;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section - Робот суреті осында */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* Заманауи роботтың суреті */
+            background: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Скролл жасағанда әдемі эффект береді */
+        }
+
+        /* Суреттің бетіндегі күңгірт қабат (текст жақсы көріну үшін) */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
+            z-index: 1;
+        }
+
+        /* Контентті күңгірт қабаттың үстіне шығару */
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #FFD700, #fff, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            color: #e0e0e0;
+            font-weight: 300;
+        }
+
+        /* Заманауи "Неонды" батырма */
+        .cta-button {
+            padding: 18px 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border: 2px solid #FFD700;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:hover {
+            background: #FFD700;
+            color: black;
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.7);
+            transform: translateY(-5px);
+        }
+
+        /* Жоғарғы мәзір */
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 30px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #FFD700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">TECH GOLD</a>
+        <div style="font-size: 30px; cursor: pointer;">☰</div>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1>TECH GOLD</h1>
+            <p>Болашақ технологиясы — бүгін сіздің қолыңызда</p>
+            <a href="#" class="cta-button">Толығырақ көру</a>
+        </div>
+    </section>
+
+</body>
+</html>
